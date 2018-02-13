@@ -1,3 +1,5 @@
+@import url("reset.css");
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
@@ -236,4 +238,57 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media only screen and (max-width: 980px){
+
+.container{
+  max-width: 768px;
+}
+
+.main-section{
+  max-width: 400px;
+}
+
+.work{
+  width: 270px;
+  margin: 20px;
+  overflow: auto;
+}
+
+}
+
+@media only screen and (max-width: 768px){
+
+.main-section,
+.sidebar{
+  max-width: 100%;  
+}
+
+main{
+  overflow: auto;
+}
+
+.work{
+  width: 47%;
+}
+
+}
+
+@media only screen and (max-width: 640px){
+
+main.container{
+  padding-top: 0;
+}
+
+header.container{
+  padding: 0;
+}
+
+#logo,
+.auth-imag,
+.work{
+  width: 100%;
+}
+
 }
